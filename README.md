@@ -18,11 +18,11 @@ boolean isMutant(String[] dna);
 
 ## URL de RENDER
 
-//POST
+- **POST /mutant:**
 
 https://integradormutante.onrender.com/mutant
 
-//GET
+- **GET /stats:**
 
 https://integradormutante.onrender.com/stats
 
@@ -42,14 +42,27 @@ El ADN se considera mutante si se encuentran más de una secuencia de cuatro let
    - Las columnas de la matriz. 
    - Las diagonales principales y secundarias.
 3. Resultado: Si se encuentran más de una secuencia válida, el ADN se clasifica como mutante. De lo contrario, se clasifica como humano.
-   
+
 ## Lógica Utilizada
 ### Análisis del ADN
-   El análisis se basa en un recorrido por cada una de las direcciones posibles en la matriz. La función isMutant recorre la matriz en busca de secuencias consecutivas de cuatro letras iguales en:
+El servicio DnaService es el encargado de implementar la lógica de detección de ADN mutante. El proceso sigue los siguientes pasos:
 
-- Filas: Verificamos si hay secuencias de cuatro letras iguales en cada fila.
-- Columnas: Analizamos cada columna de la matriz en busca de secuencias. 
-- Diagonales: Verificamos tanto las diagonales principales (de izquierda a derecha) como las diagonales secundarias (de derecha a izquierda).
+1. **Analizar ADN** ( `analizarDna` ):
+
+- Se verifica si el ADN ya ha sido procesado anteriormente consultando la base de datos.
+- Si no ha sido procesado, se llama al método isMutant para determinar si es mutante y se guarda el resultado en la base de datos.
+
+2. **Detección de Mutantes** (`isMutant`):
+
+- Se recorre la matriz de ADN verificando si hay secuencias consecutivas de cuatro letras iguales en filas, columnas o diagonales.
+
+3. **Verificación de Filas, Columnas y Diagonales**:
+
+- `verificarFilas`: Revisa cada fila de la matriz.
+- `verificarColumnas`: Verifica secuencias de cuatro letras iguales en las columnas.
+- `verificarDiagonalPrincipal` y `verificarDiagonalSecundaria`: Verifican secuencias en las diagonales.
+
+4. **Resultado**: Si se encuentra más de una secuencia mutante en cualquier dirección, se clasifica como mutante.
 
 Para optimizar el rendimiento, se realiza una verificación temprana: en cuanto se detectan más de una secuencia válida, se determina que el ADN es mutante y el análisis se detiene.
 
