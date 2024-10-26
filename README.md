@@ -132,3 +132,11 @@ En este ejemplo, no se encuentran suficientes secuencias consecutivas para clasi
 
 ![1000peticiones](./capturasJMeter/1000peticiones.png)
 
+## Diagrama de Secuencia
+
+### POST /mutant
+![diagrama](./DiagramaSecuencia/secuenciaPOST.png)
+
+### GET /stats
+![diagrama](./DiagramaSecuencia/secuenciaGET.png)
+
