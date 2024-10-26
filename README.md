@@ -15,6 +15,17 @@ El proyecto implementa una función clave con la siguiente firma:
 ```java
 boolean isMutant(String[] dna);
 ```
+
+## URL de RENDER
+
+//POST
+
+https://integradormutante.onrender.com/mutant
+
+//GET
+
+https://integradormutante.onrender.com/stats
+
 ## Funcionamiento del Programa
 El programa recibe como entrada un array de Strings que representa cada fila de una matriz de (NxN) con la secuencia de ADN. Las letras que componen estos strings solo pueden ser: A, T, C, G, que corresponden a las bases nitrogenadas del ADN.
 
@@ -110,4 +121,14 @@ En este ejemplo, se pueden observar secuencias mutantes en la fila, columna y di
 }
 ```
 En este ejemplo, no se encuentran suficientes secuencias consecutivas para clasificar el ADN como mutante.
+
+## Pruebas con JMeter
+
+### 100 peticiones
+
+![100peticiones](./capturasJMeter/100peticiones.png)
+
+## 1000 peticiones
+
+![1000peticiones](./capturasJMeter/1000peticiones.png)
 
