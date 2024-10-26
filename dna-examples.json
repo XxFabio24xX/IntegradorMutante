@@ -1,0 +1,48 @@
+{
+  "mutants": [
+    {
+      "dna": ["ATGCGA", "CAGTGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"]
+    },
+    {
+      "dna": ["AAAAGA", "CTGTAC", "TTAAGT", "AGAAGG", "GCGCGA", "TACCTG"]
+    },
+    {
+      "dna": ["ATGCGA", "CAGTGC", "TTTTGT", "AGAAGG", "CCTCTA", "TCACTG"]
+    },
+    {
+      "dna": ["AAAAAA", "CCGGTT", "GAGGAA", "TGGTGT", "AAAGGG", "CCTAGG"]
+    },
+    {
+      "dna": ["ATGCGA", "CAGTGC", "TTATGG", "AGAAAG", "CCCCTA", "TCACTG"]
+    },
+    {
+      "dna": ["GGGGGG", "GCGTGC", "TTGTGT", "GGAAGG", "GCCCGA", "GGGCTG"]
+    },
+    {
+      "dna": ["ATGCGA", "CAGTAC", "TTTTTT", "AGAAGG", "CCCCAA", "TCACTG"]
+    }
+  ],
+  "humans": [
+    {
+      "dna": ["ATGCGT", "CAGTGC", "TTATTT", "AGACGG", "GCGTCA", "TCACTG"]
+    },
+    {
+      "dna": ["AGGCTA", "CTCTGC", "TTATGT", "AGACGG", "CCCCTA", "TCACTG"]
+    },
+    {
+      "dna": ["TTGCTA", "AAGTGC", "TCATGT", "AGAACG", "CGCCTA", "TCACTT"]
+    },
+    {
+      "dna": ["ATGTTT", "CGGTGC", "TGTTGT", "AGAAGG", "CGCTTA", "TTACTG"]
+    },
+    {
+      "dna": ["GCGTGA", "AAGTTC", "TCATGT", "ATGGCG", "CGCTTT", "TCACTT"]
+    },
+    {
+      "dna": ["AATTGC", "CTGCGC", "TGGTTT", "AAGCTT", "CCGTAG", "TCCCTG"]
+    },
+    {
+      "dna": ["GTGCGA", "CTCTGC", "TTATGT", "ACGTGG", "CGGTGA", "TTACTG"]
+    }
+  ]
+}
